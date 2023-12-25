@@ -9,13 +9,8 @@ body {
     background-color: #B1EAE8;
     color: #107A92;
     font-family: 'Urbanist', sans-serif;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     margin: 0;
-}
-main{
-    flex: 1;
 }
 nav {
     overflow: hidden;
