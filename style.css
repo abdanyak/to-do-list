@@ -1,191 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-    background-color: #B1EAE8;
-    color: #107A92;
-    font-family: 'Urbanist', sans-serif;
+    background-color: rgb(56, 163, 56);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-main{
-    flex: 1;
-}
-nav {
-    overflow: hidden;
-    background-color: #66DDDD;
-    font-weight: bold;
-}
-
-nav a {
-    float: left;
-    display: block;
-    color: #F0F1EE;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-nav a:hover {
-    background-color: #107A92;
-    color: #66DDDD;
-}
-
-nav .icon {
-    display: none;
-}
-
-.btn {
-    margin-top: 16px;
-    border: none;
-    padding: 12px;
-    background-color: white;
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
-    cursor: pointer;
-}
-.container-add{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: white;
-    margin:2rem;
-    border-radius: 1rem;
-    padding: 2rem;
-    height: auto;
-}
-.container-add .header-add{
-    padding-bottom: 1rem;
-}
-.container-add .submit-add{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
-.container-add input{
-    font-family: 'Urbanist', sans-serif;
-    background: whitesmoke;
-    border: 2px solid #107A92;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    margin-bottom: 8px;
-    font-size: 1rem;
-}
-.container-add button{
-    font-family: 'Urbanist', sans-serif;
-    background: #107A92;
-    border: 2px transparent;
-    color: white;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    margin-bottom: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.container-add button:hover{
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.1rem;
-    color: #B1EAE8;
-    transition: all 0.1s ease-in-out;
+
+.todo-wrapper {
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 25px;
+    border-radius: 15px 50px 10px;
+    -webkit-border-radius: 15px 50px 10px;
+    -moz-border-radius: 15px 50px 10px;
+    -ms-border-radius: 15px 50px 10px;
+    -o-border-radius: 15px 50px 10px;
+    height: auto;
+    width: 600px;
 }
 
-.list-content{
-    background-color: white;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    height: auto;
-    overflow: hidden;
+.todo-wrapper h2 {
+    margin: 0;
+    font-size: 1.5rem;
 }
-.control-button{
-    text-align: center;
-    justify-content:  space-around;
-    display: flex;
+
+.todo-wrapper p {
+    color: rgb(77, 77, 77);
+    font-style: italic;
+    margin: 5px 0;
 }
-.control-button button{
-    font-family: 'Urbanist', sans-serif;
-    border: 2px transparent;
-    border-radius: 1rem;
-    padding-block: 0.5rem;
-    padding-inline: 1rem;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-}
-.pretty-button{
-    margin: 0.5rem;
-}
-#clear-completed-button{
-    background-color: skyblue;
-}
-#empty-button{
-    background-color: maroon;
-}
-#save-button{
-    background-color: mediumseagreen;
-}
+
 .todo-wrapper ol {
     margin: 20px 0;
-    padding-inline: 2rem;
+    cursor: pointer;
 }
 
 .todo-wrapper ol li {
-    margin: 8px 0;
-    padding: 0.5rem; 
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    margin: 5px 0;
+    padding: 3px;
+    transition: all 0.5 ease-out;
+    -webkit-transition: all 0.5 ease-out;
+    -moz-transition: all 0.5 ease-out;
+    -ms-transition: all 0.5 ease-out;
+    -o-transition: all 0.5 ease-out;
 }
 
-.todo-wrapper ol li:nth-child(even) {
-    background: #F0F1EE;
+.todo-wrapper form {
+    display: inline-block;
 }
 
-.todo-wrapper .completed {
-    text-decoration: line-through;
-    color: #66DDDD;
+.todo-wrapper input {
+    padding: 3px 5px;
+    width: 400px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
-footer{
-    color: white;
+.todo-wrapper .pretty-button {
+    background-color: rgb(46, 116, 221);
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border: none;
     text-align: center;
-    font-weight: bold;
-    background-color: #66DDDD;
-}
-@media screen and (max-width: 600px) {
-    nav a:not(:first-child) {display: none;}
-    nav a.icon {
-        float: right;
-        display: block;
-    }
+    display: inline-block;
+    font-size: small;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    nav.responsive { position: relative; }
-    nav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .control-button{
-        text-align: center;
-        flex-wrap: wrap;
-    }
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#control-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+#empty-button {
+    background-color: red;
+}
+
+#save-button {
+    background-color: rgb(56, 163, 56) ;
 }
