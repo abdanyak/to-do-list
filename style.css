@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #B1EAE8;
     color: #107A92;
@@ -11,14 +12,17 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-main{
+
+main {
     flex: 1;
 }
+
 nav {
     overflow: hidden;
     background-color: #66DDDD;
     font-weight: bold;
 }
+
 nav a {
     float: left;
     display: block;
@@ -28,13 +32,16 @@ nav a {
     text-decoration: none;
     font-size: 17px;
 }
+
 nav a:hover {
     background-color: #107A92;
     color: #66DDDD;
 }
+
 nav .icon {
     display: none;
 }
+
 .btn {
     margin-top: 16px;
     border: none;
@@ -45,6 +52,7 @@ nav .icon {
     color: black;
     cursor: pointer;
 }
+
 .todo-wrapper {
     background-color: #fff;
     border-radius: 15px;
@@ -52,17 +60,21 @@ nav .icon {
     font-weight: 300;
     margin: 2rem;
 }
-.header-add{
+
+.header-add {
     padding-bottom: 1rem;
     text-align: center;
 }
+
 .header-add p {
     font-style: italic;
 }
-.todo-adder{
+
+.todo-adder {
     display: flex;
     flex-direction: column;
 }
+
 .todo-adder .submit-button {
     font-family: 'Urbanist', sans-serif;
     background: #107A92;
@@ -76,12 +88,14 @@ nav .icon {
     font-size: 1rem;
     cursor: pointer;
 }
-.todo-adder button:hover{
+
+.todo-adder button:hover {
     font-family: 'Urbanist', sans-serif;
     font-size: 1.1rem;
     color: #B1EAE8;
     transition: all 0.1s ease-in-out;
 }
+
 .todo-adder input {
     font-family: 'Urbanist', sans-serif;
     background: whitesmoke;
@@ -92,12 +106,14 @@ nav .icon {
     margin-bottom: 8px;
     font-size: 1rem;
 }
-.list-content{
+
+.list-content {
     background-color: white;
     margin: 2rem;
     padding: 2rem;
     border-radius: 1rem;
 }
+
 .list-content ol {
     margin: 20px 0;
     padding-inline: 2rem;
@@ -105,8 +121,9 @@ nav .icon {
     border-radius: 1rem;
     width: auto;
 }
+
 .list-content ol li {
-    padding: 1rem; 
+    padding: 1rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -115,23 +132,29 @@ nav .icon {
     transition: all 0.5s ease-out;
     font-weight: bold;
 }
+
 .list-content ol li:nth-child(even) {
     background-color: whitesmoke;
 }
+
 .list-content .completed {
     text-decoration: line-through;
     color: black;
 }
+
 .list-content .pretty-button:hover {
     cursor: pointer;
     opacity: 0.75;
 }
+
 .list-content input {
     padding: 3px 6px;
 }
+
 .list-content form {
     display: inline-block;
 }
+
 #control-wrapper {
     text-align: center;
     display: flex;
@@ -139,7 +162,8 @@ nav .icon {
     justify-content: space-around;
 
 }
-.list-content button{
+
+.list-content button {
     font-family: 'Urbanist', sans-serif;
     border: 2px transparent;
     border-radius: 1rem;
@@ -150,6 +174,7 @@ nav .icon {
     font-weight: bold;
     margin: 0.5rem;
 }
+
 .list-content #clear-btn {
     background-color: #0093D5;
 }
@@ -161,27 +186,37 @@ nav .icon {
 .list-content #save-btn {
     background-color: #49B749;
 }
-footer{
+
+footer {
     color: white;
     text-align: center;
     font-weight: bold;
     background-color: #66DDDD;
     padding: 1rem;
 }
+
 @media screen and (max-width: 600px) {
-    nav a:not(:first-child) {display: none;}
+    nav a:not(:first-child) {
+        display: none;
+    }
+
     nav a.icon {
         float: right;
         display: block;
     }
 }
+
 @media screen and (max-width: 600px) {
-    nav.responsive { position: relative; }
+    nav.responsive {
+        position: relative;
+    }
+
     nav.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+
     nav.responsive a {
         float: none;
         display: block;
