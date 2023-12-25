@@ -67,10 +67,10 @@ function emptyList() {
 }
 
 var myArray = [];
-myArray.push("something to store");
-myArray.push("something else to store");
-alert(myArray[0]);
-//This will alert "something to store"
+// myArray.push("something to store");
+// myArray.push("something else to store");
+// alert(myArray[0]);
+// //This will alert "something to store"
 
 var toDoInfo = {
     "task": "Thing I need to do",
