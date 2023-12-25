@@ -1,94 +1,35 @@
-.container-add{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: white;
-    margin:2rem;
-    border-radius: 1rem;
-    padding: 2rem;
-    height: auto;
-}
-.container-add .header-add{
-    padding-bottom: 1rem;
-}
-.container-add .submit-add{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.container-add input{
-    font-family: 'Urbanist', sans-serif;
-    background: whitesmoke;
-    border: 2px solid #107A92;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    margin-bottom: 8px;
-    font-size: 1rem;
-}
-.container-add button{
-    font-family: 'Urbanist', sans-serif;
-    background: #107A92;
-    border: 2px transparent;
-    color: white;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    margin-bottom: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.container-add button:hover{
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.1rem;
-    color: #B1EAE8;
-    transition: all 0.1s ease-in-out;
+body {
+    background-color: aquamarine;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-.list-content{
-    background-color: white;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    height: auto;
-    overflow: hidden;
+.todo-wrapper {
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-weight: 300;
 }
-.control-button{
-    text-align: center;
-    justify-content:  space-around;
-    display: flex;
+
+.todo-wrapper h2 {
+    margin: 0;
 }
-.control-button button{
-    font-family: 'Urbanist', sans-serif;
-    border: 2px transparent;
-    border-radius: 1rem;
-    padding-block: 0.5rem;
-    padding-inline: 1rem;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
+
+.todo-wrapper p {
+    font-style: italic;
+    color: #666;
+    margin: 5px 0;
 }
-.pretty-button{
-    margin: 0.5rem;
-}
-#clear-completed-button{
-    background-color: skyblue;
-}
-#empty-button{
-    background-color: maroon;
-}
-#save-button{
-    background-color: mediumseagreen;
-}
+
 .todo-wrapper ol {
     margin: 20px 0;
-    padding-inline: 2rem;
 }
 
 .todo-wrapper ol li {
-    margin: 8px 0;
-    padding: 0.5rem; 
+    margin: 5px 0;
+    padding: 3px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -98,23 +39,75 @@
 }
 
 .todo-wrapper ol li:nth-child(even) {
-    background: #F0F1EE;
+    background: #ddd;
 }
 
 .todo-wrapper .completed {
     text-decoration: line-through;
-    color: #66DDDD;
+    color: #666;
 }
 
-footer{
-    color: white;
+.todo-wrapper .pretty-button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #0093D5;
+    border: none;
+    color: #fff;
     text-align: center;
-    font-weight: bold;
-    background-color: #66DDDD;
+    display: inline-block;
+    font-size: small;
 }
-@media screen and (max-width: 600px) {
-    .control-button{
-        text-align: center;
-        flex-wrap: wrap;
+
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.todo-wrapper input {
+    padding: 3px 6px;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-btn {
+    background-color: #0093D5;
+}
+
+.todo-wrapper #empty-btn {
+    background-color: #9B1C20;
+}
+
+.todo-wrapper #save-btn {
+    background-color: #49B749;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
+
+    .todo-wrapper input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    .todo-wrapper input {
+        width: 400px;
     }
 }
