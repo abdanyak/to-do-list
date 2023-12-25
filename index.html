@@ -7,33 +7,23 @@
     <title>To Do List</title>
 </head>
 <body>
-    <main>
-        <div class="todo-wrapper">
-            <section class="container-add">
-                <div class="header-add">
-                    <h1>MY TO DO LIST</h1>
-                    <p>Double-click an item to mark it complete</p>
-                </div>
-                <form name="todo-adder" class="submit-add">
-                    <input type="text" id="todo-entry-box">
-                    <button id="add-button" class="form-button">Submit</button>
-                </form>
-            </section>
+    <div class="todo-wrapper">
+        <h2>My to-do list</h2>
+        <p>Double-click an item to mark it complete.</p>
 
-            <section class="list-content">
-                <h1>List</h1>
-                <ol id="todo-list">
-                    <!-- isi -->
-                </ol>
-                <div id="control-wrapper" class="control-button">
-                    <button id="clear-completed-button" onclick="clearCompletedToDoItems()" class="pretty-button">Clear
-                        Completed</button>
-                    <button id="empty-button" onclick="emptyList()" class="pretty-button">Empty List</button>
-                    <button id="save-button" onclick="saveList()" class="pretty-button">Save List</button>
-                </div>
-            </section>
+        <form name="todo-adder">
+            <input type="text" id="todo-entry-box" />
+        </form>
+        <button id="add-btn" class="pretty-button">Add</button>
+        <br />
+        <ol id="todo-list">
+        </ol>
+        <div id="control-wrapper">
+            <button id="clear-btn" onclick="clearSelectedToDoItems()" class="pretty-button">Clear Selected</button>
+            <button id="empty-btn" onclick="emptyList()" class="pretty-button">Empty List</button>
+            <button id="save-btn" onclick="saveList()" class="pretty-button">Save List</button>
         </div>
-    </main>
+    </div>
 
     <script src="script.js"></script>
 
